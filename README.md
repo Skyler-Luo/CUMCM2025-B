@@ -246,10 +246,8 @@ $$\Delta = 2d\sqrt{n_2(\nu)^2 - \sin^2\theta_0}$$
 $$m(\nu) = \frac{\Delta}{\lambda} = 2d\nu\sqrt{n_2(\nu)^2 - \sin^2\theta_0}$$
 
 干涉条件：
-- **极大值点**： $m(\nu_{\text{peak}}) = k$ （整数）
-
-- **极小值点**：
-  $$m(\nu_{\text{valley}}) = k + 0.5$$（半整数）
+- **极大值点**：$m(\nu_{\text{peak}}) = k$（整数）
+- **极小值点**：$m(\nu_{\text{valley}}) = k + 0.5$（半整数）
 
 #### 折射率模型（Drude-Sellmeier）
 
@@ -263,7 +261,7 @@ $$\epsilon(\nu) = \epsilon_{\text{bound}}(\nu) + \epsilon_{\text{Drude}}(\nu)$$
 - **Drude项**（自由载流子）：
   $$\epsilon_{\text{Drude}}(\omega) = -\frac{\omega_p^2}{\omega^2 + i\gamma\omega}$$
 
-其中 $\omega_p^2 = \frac{Ne^2}{\epsilon_0 m_{\text{eff}}}$ , $N$ 为载流子浓度，$\gamma$ 为散射率。
+其中 $\omega_p^2 = \frac{Ne^2}{\epsilon_0 m_{\text{eff}}}$，$N$ 为载流子浓度，$\gamma$ 为散射率。
 
 ### 问题二：极值点拟合算法
 
@@ -308,17 +306,17 @@ $$R_{\text{theory}}(\nu) = \left|\frac{\eta_0 - Y}{\eta_0 + Y}\right|^2$$
 | 附件1 | 10°    | 7.746     | ±0.036        | 0.47% | 高 ✅   |
 | 附件2 | 15°    | 7.646     | ±0.031        | 0.41% | 高 ✅   |
 
-**最终推荐值**：$d = 7.688 \pm 0.024 μm$ （加权平均）
+**最终推荐值**：$d = 7.688 \pm 0.024\,\mu\text{m}$（加权平均）
 
 ### 问题三：全谱拟合结果
 
 #### 硅外延层（附件3、4）
-- 附件3（10°）：$d = 7.313 \pm 0.056 μm$
-- 附件4（15°）：$d = 7.272 \pm 0.063 μm$
+- 附件3（10°）：$d = 7.313 \pm 0.056\,\mu\text{m}$
+- 附件4（15°）：$d = 7.272 \pm 0.063\,\mu\text{m}$
 
 #### 碳化硅外延层
-- 附件1（10°）：$d = 7.257 \pm 0.087 μm$
-- 附件2（15°）：$d = 5.038 \pm 0.035 μm$
+- 附件1（10°）：$d = 7.257 \pm 0.087\,\mu\text{m}$
+- 附件2（15°）：$d = 5.038 \pm 0.035\,\mu\text{m}$
 
 **全谱拟合结果对比**：
 
