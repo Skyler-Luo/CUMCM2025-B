@@ -54,9 +54,11 @@ Excel/CSV   格式转换    小波去噪  极值点/全谱  多角度一致性
 <div align="center">
 
 ![单次反射示意图](./img/image1.png)
+
 *图1：红外干涉法测量原理（单次反射）*
 
 ![多光束干涉示意图](./img/image2.png)
+
 *图2：多光束干涉原理（多次反射与透射）*
 
 </div>
@@ -145,13 +147,10 @@ python data_visualization_analysis.py
 <div align="center">
 
 ![原始光谱分析](./data/figures/raw_spectra_analysis.png)
-*原始光谱数据可视化*
 
 ![去噪残差分析](./data/figures/denoising_residual_analysis.png)
-*去噪残差分析*
 
 ![小波去噪效果](./data/figures/wavelet_denoising_summary.png)
-*小波去噪前后对比*
 
 </div>
 
@@ -180,22 +179,15 @@ python iterative_extremum_fitter.py data/附件2.csv --angle 15 --material sic
 **示例结果**：
 
 <div align="center">
-    <figure style="display:inline-block; width:45%; margin:0 1% 24px;">
-        <img src="./data/figures/spectrum_extrema.png" alt="光谱与极值点图" style="width:100%;" />
-        <figcaption>光谱极值点标记</figcaption>
-    </figure>
-    <figure style="display:inline-block; width:45%; margin:0 1% 24px;">
-        <img src="./data/figures/interference_orders.png" alt="干涉级数拟合结果图" style="width:100%;" />
-        <figcaption>干涉级数线性拟合结果</figcaption>
-    </figure>
-    <figure style="display:inline-block; width:45%; margin:0 1% 24px;">
-        <img src="./data/figures/refractive_index.png" alt="拟合折射率n与k曲线图" style="width:100%;" />
-        <figcaption>考虑载流子效应的折射率曲线</figcaption>
-    </figure>
-    <figure style="display:inline-block; width:45%; margin:0 1% 24px;">
-        <img src="./data/figures/n_surface.png" alt="折射率实部随波数与载流子浓度的表面可视化图" style="width:100%;" />
-        <figcaption>折射率实部随波数与载流子浓度的表面可视化</figcaption>
-    </figure>
+
+![光谱与极值点图](./data/figures/spectrum_extrema.png)
+
+![干涉级数拟合结果图](./data/figures/interference_orders.png)
+
+![拟合折射率n与k曲线图](./data/figures/refractive_index.png)
+
+![折射率实部随波数与载流子浓度的表面可视化图](./data/figures/n_surface.png)
+
 </div>
 
 多角度测量一致性分析：
@@ -244,7 +236,7 @@ $$\Delta = 2d\sqrt{n_2(\nu)^2 - \sin^2\theta_0}$$
 
 其中：
 - $d$ - 外延层厚度
-- $n_2(\nu)$ - 外延层折射率（波数$\nu$的函数）
+- $n_2(\nu)$ - 外延层折射率（波数 $\nu$ 的函数）
 - $\theta_0$ - 入射角
 
 #### 干涉级数
@@ -254,8 +246,10 @@ $$\Delta = 2d\sqrt{n_2(\nu)^2 - \sin^2\theta_0}$$
 $$m(\nu) = \frac{\Delta}{\lambda} = 2d\nu\sqrt{n_2(\nu)^2 - \sin^2\theta_0}$$
 
 干涉条件：
-- **极大值点**：$m(\nu_{\text{peak}}) = k$（整数）
-- **极小值点**：$m(\nu_{\text{valley}}) = k + 0.5$（半整数）
+- **极大值点**： $m(\nu_{\text{peak}}) = k$ （整数）
+
+- **极小值点**：
+  $$m(\nu_{\text{valley}}) = k + 0.5$$（半整数）
 
 #### 折射率模型（Drude-Sellmeier）
 
@@ -269,7 +263,7 @@ $$\epsilon(\nu) = \epsilon_{\text{bound}}(\nu) + \epsilon_{\text{Drude}}(\nu)$$
 - **Drude项**（自由载流子）：
   $$\epsilon_{\text{Drude}}(\omega) = -\frac{\omega_p^2}{\omega^2 + i\gamma\omega}$$
 
-其中 $\omega_p^2 = \frac{Ne^2}{\epsilon_0 m_{\text{eff}}}$，$N$ 为载流子浓度，$\gamma$ 为散射率。
+其中 $\omega_p^2 = \frac{Ne^2}{\epsilon_0 m_{\text{eff}}}$ , $N$ 为载流子浓度，$\gamma$ 为散射率。
 
 ### 问题二：极值点拟合算法
 
@@ -314,17 +308,17 @@ $$R_{\text{theory}}(\nu) = \left|\frac{\eta_0 - Y}{\eta_0 + Y}\right|^2$$
 | 附件1 | 10°    | 7.746     | ±0.036        | 0.47% | 高 ✅   |
 | 附件2 | 15°    | 7.646     | ±0.031        | 0.41% | 高 ✅   |
 
-**最终推荐值**：$d = 7.688 \pm 0.024$ μm（加权平均）
+**最终推荐值**：$d = 7.688 \pm 0.024 μm$ （加权平均）
 
 ### 问题三：全谱拟合结果
 
 #### 硅外延层（附件3、4）
-- 附件3（10°）：$d = 7.313 \pm 0.056$ μm
-- 附件4（15°）：$d = 7.272 \pm 0.063$ μm
+- 附件3（10°）：$d = 7.313 \pm 0.056 μm$
+- 附件4（15°）：$d = 7.272 \pm 0.063 μm$
 
-#### 碳化硅外延层（优化后）
-- 附件1（10°）：$d = 7.257 \pm 0.087$ μm
-- 附件2（15°）：$d = 5.038 \pm 0.035$ μm
+#### 碳化硅外延层
+- 附件1（10°）：$d = 7.257 \pm 0.087 μm$
+- 附件2（15°）：$d = 5.038 \pm 0.035 μm$
 
 **全谱拟合结果对比**：
 
