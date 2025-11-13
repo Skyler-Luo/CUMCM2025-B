@@ -135,10 +135,10 @@ python data_visualization_analysis.py
 ```
 
 **输出文件**：
-- `data/denoised/denoised_附件*.csv` - 去噪后的光谱数据
-- `data/figures/raw_spectra_analysis.png` - 原始光谱可视化
-- `data/figures/wavelet_denoising_summary.png` - 去噪效果分析
-- `data/figures/denoising_residual_analysis.png` - 去噪残差分析
+- `data/denoised/denoised_附件*.csv` - 去噪后的光谱数据图
+- `data/figures/raw_spectra_analysis.png` - 原始光谱可视化图
+- `data/figures/wavelet_denoising_summary.png` - 去噪效果分析图
+- `data/figures/denoising_residual_analysis.png` - 去噪残差分析图
 
 **示例结果**：
 
