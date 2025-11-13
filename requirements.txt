@@ -1,0 +1,8 @@
+cycler
+matplotlib
+numpy
+pandas
+scipy
+seaborn
+tqdm
+PyWavelets
